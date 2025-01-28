@@ -16,6 +16,48 @@
 </head>
 
 <body class="bg-purple-50">
+	<!-- Add this header section above your existing content -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm transition-all duration-300 hover:shadow-lg hover:bg-white/100 hover:-translate-y-[2px] border-b border-purple-100"
+        x-data="{ isScrolled: false }"
+        @scroll.window="isScrolled = window.scrollY > 50"
+        :class="{ 'shadow-md': isScrolled }">
+  <div class="max-w-6xl mx-auto px-4 md:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Left side - Title -->
+      <div class="flex items-center space-x-2 group cursor-pointer">
+        <span class="text-xl font-bold text-purple-700 transition-colors group-hover:text-purple-900">
+          Do more, time less
+        </span>
+        <span class="text-sm text-purple-500 opacity-0 group-hover:opacity-100 transition-opacity">
+          ↗
+        </span>
+      </div>
+
+      <!-- Right side - Interactive elements -->
+      <div class="flex items-center space-x-4">
+        <a href="#subscribe" class="px-3 py-1.5 text-sm font-medium text-purple-700 hover:bg-purple-50 rounded-md transition-colors">
+          Subscribe
+        </a>
+        <div class="h-6 w-px bg-purple-100"></div>
+        <button class="p-2 hover:bg-purple-50 rounded-full transition-colors">
+          <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Progress bar -->
+  <div class="absolute bottom-0 left-0 h-0.5 bg-purple-200 w-full">
+    <div class="h-full bg-purple-500 transition-all duration-300" 
+         :style="`width: ${(window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100}%`">
+    </div>
+  </div>
+</header>
+
+<!-- Add Alpine.js for interactive elements -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	<div class="bg-purple-50 flex flex-col justify-center px-4 md:px-12" id="projects">
     <h1 class="text-3xl font-bold text-slate-900 open-sans-title md:pt-4 pb-5 w-full text-center">Notion Templates</h1>
     <div class="grid grid-cols-1 md:grid-cols-2 py-4 gap-16 max-w-4xl mx-auto">
