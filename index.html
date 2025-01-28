@@ -32,43 +32,60 @@
     
     <!-- Grid with added spacing -->
     <div class="grid grid-cols-1 md:grid-cols-2 py-8 gap-16 max-w-4xl mx-auto mt-6">
-       <div
-        class="rounded-xl bg-white flex flex-col shadow-sm border border-violet-500 hover:shadow-lg hover:shadow-violet-200 transition-all duration-500 ease-in-out transform hover:scale-105">
-        <img src="images/AI Youtube creator os.jpg" class="rounded-t-xl h-64 object-cover" />
-        <div class="px-4 pl-3 py-4 flex flex-col justify-between flex-grow">
-          <div>
-            <h2 class="text-lg font-semibold">AI Youtube Creator OS</h2>
-            <p class="text-gray-800 text-justify">This template streamlines the entire YouTube content creation process through AI. It offers a structured workflow system that guides creators from initial ideation through publication, with built-in tools for content planning, script development, and video production management.
-            </p>
-          </div>
-          <div class="flex justify-end pt-4">
-            <a href="https://www.notion.com/templates/youtube-creator-os" 
-               class="bg-violet-500 text-white font-medium px-4 py-2 rounded-sm hover:bg-violet-600 transition-colors duration-300">
-              Get Now
-            </a>
+       <div class="group">
+        <div class="rounded-xl bg-white flex flex-col shadow-md border-2 border-gray-200 transition-all duration-300 ease-in-out transform group-hover:-translate-y-2 group-hover:shadow-xl relative">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-5 rounded-xl transition-opacity duration-300"></div>
+          <img src="images/AI Youtube creator os.jpg" class="rounded-t-xl h-64 object-cover" />
+          <div class="px-6 py-6 flex flex-col justify-between flex-grow">
+            <div>
+              <h2 class="text-xl font-bold mb-3">AI Youtube Creator OS</h2>
+              <p class="text-gray-600 text-sm">This template streamlines the entire YouTube content creation process through AI. It offers a structured workflow system that guides creators from initial ideation through publication, with built-in tools for content planning, script development, and video production management.</p>
+            </div>
+            <div class="flex justify-end pt-6">
+              <a href="https://www.notion.com/templates/youtube-creator-os" 
+                 class="gumroad-button bg-violet-500 text-white font-semibold px-6 py-3 rounded-md hover:bg-violet-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-md relative overflow-hidden">
+                <span class="relative z-10">Get Now</span>
+                <div class="absolute inset-0 h-full w-full bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                <span class="absolute inset-0 flex items-center justify-center text-violet-500 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">Get Now</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div
-        class="rounded-xl bg-white flex flex-col shadow-sm border border-violet-500 hover:shadow-lg hover:shadow-violet-200 transition-all duration-500 ease-in-out transform hover:scale-105">
-        <img src="images/Minimalistic Habit Tracker.jpg" class="rounded-t-xl h-64 object-cover" />
-        <div class="px-4 pl-3 py-4 flex flex-col justify-between flex-grow">
-          <div>
-            <h2 class="text-lg font-semibold">Minimalistic Habit Tracker</h2>
-            <p class="text-gray-800 text-justify">Track habits effortlessly with a visual streak calendar. Monitor daily progress, view streaks by month/quarter/year, and customize habits. Missed days? No problem—just resume. Color-coded, minimal design for clarity.</p>
-          </div>
-          <div class="flex justify-end pt-4">
-            <a href="https://www.notion.com/templates/minimilist" 
-               class="bg-violet-500 text-white font-medium px-4 py-2 rounded-sm hover:bg-violet-600 transition-colors duration-300">
-              Get Now
-            </a>
+      <div class="group">
+        <div class="rounded-xl bg-white flex flex-col shadow-md border-2 border-gray-200 transition-all duration-300 ease-in-out transform group-hover:-translate-y-2 group-hover:shadow-xl relative">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-5 rounded-xl transition-opacity duration-300"></div>
+          <img src="images/Minimalistic Habit Tracker.jpg" class="rounded-t-xl h-64 object-cover" />
+          <div class="px-6 py-6 flex flex-col justify-between flex-grow">
+            <div>
+              <h2 class="text-xl font-bold mb-3">Minimalistic Habit Tracker</h2>
+              <p class="text-gray-600 text-sm">Track habits effortlessly with a visual streak calendar. Monitor daily progress, view streaks by month/quarter/year, and customize habits. Missed days? No problem—just resume. Color-coded, minimal design for clarity.</p>
+            </div>
+            <div class="flex justify-end pt-6">
+              <a href="https://www.notion.com/templates/minimilist" 
+                 class="gumroad-button bg-violet-500 text-white font-semibold px-6 py-3 rounded-md hover:bg-violet-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-md relative overflow-hidden">
+                <span class="relative z-10">Get Now</span>
+                <div class="absolute inset-0 h-full w-full bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                <span class="absolute inset-0 flex items-center justify-center text-violet-500 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">Get Now</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 </div>
-      </div>
+
+<style>
+  .gumroad-button:hover span:first-child {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .gumroad-button:hover span:last-child {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+</style>
 
   <div class="min-h-screen bg-purple-50 flex flex-col justify-center md:px-6">
     <div style="z-index: 1;"
